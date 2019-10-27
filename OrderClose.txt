@@ -1,0 +1,14 @@
+OrderClose()オープンポジションを決済する関数
+【書式】
+  boolOrderClose(
+    int ticket,
+    double volume,
+    double price,
+    int slippage,
+    color arrow_color=CLR_NONE)
+【引数】①ticket決済するオープンポジションのチケット番号
+  ②volume決済するロット数
+  ③price決済する価格
+  ④slippage最大許容スリッページ（ポイント）
+  ⑤arrow_color決済位置の矢印の色（省略した場合は「CLR_NONE」を指定し、矢印を表示しないことを表す）
+【戻り値】「true」（決済が成功した場合）/「false」（決済が失敗した場合）

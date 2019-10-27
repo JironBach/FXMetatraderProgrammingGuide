@@ -1,0 +1,39 @@
+iMA()移動平均を算出するテクニカル指標関数
+【書式】
+  double iMA(string symbol,
+  int timeframe,
+  int ma_period,
+  int ma_shift,
+  int ma_method,
+  int applied_price,
+  int shift)
+【引数】
+  ①symbol通貨ペア名（チャート上の通貨ペアの場合「_Symbol」を指定）
+  ②timeframeタイムフレーム（以下の定数から選択、チャート上のタイムフレームの場合「PERIOD_CURRENT」あるいは「0」を指定）
+    PERIOD_CURRENTチャート上のタイムフレーム
+    PERIOD_M1 1分足
+    PERIOD_M5 5分足
+    PERIOD_M15 15分足
+    PERIOD_M30 30分足
+    PERIOD_H1 1時間足
+    PERIOD_H4 4時間足
+    PERIOD_D1 日足
+    PERIOD_W1 週足
+    PERIOD_MN1 月足
+  ③ma_period移動平均を算出するバーの数
+  ④ma_shift移動平均を右方向にシフトするバーの数
+  ⑤ma_method移動平均の方法（以下の定数から選択）
+    MODE_SMA 単純移動平均（SMA）
+    MODE_EMA 指数移動平均（EMA）
+    MODE_SMMA 平滑移動平均（SMMA）
+    MODE_LWMA 線形加重移動平均（LWMA）
+  ⑥applied_price適用する価格（以下の定数から選択）
+    PRICE_CLOSE 終値
+    PRICE_OPEN 始値
+    PRICE_HIGH 高値
+    PRICE_LOW 安値
+    PRICE_MEDIAN（高値+安値）÷２
+    PRICE_TYPICAL（高値+安値+終値）÷３
+    PRICE_WEIGHTED（高値+安値+終値×２）÷４
+  ⑦shift移動平均を算出する位置（最新のバーから左方向へのシフト）
+【戻り値】shiftの位置での移動平均の値

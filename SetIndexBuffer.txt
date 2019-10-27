@@ -1,0 +1,6 @@
+SetIndexBuffer()指標バッファに配列を関連付ける関数
+【書式】boolSetIndexBuffer(intindex,doublebuffer[])
+【引数】
+  ①index指標インデックス（0～511の範囲の整数値で指定）
+  ②buffer[]指標バッファと関連付ける１次元動的配列
+【戻り値】「true」（成功した場合）/「false」（失敗した場合）

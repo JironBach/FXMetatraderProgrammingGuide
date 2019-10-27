@@ -1,0 +1,24 @@
+iBands()ボリンジャーバンドを算出するテクニカル指標関数
+【書式】
+  double iBands(
+    string symbol,
+    int timeframe,
+    int period,
+    double deviation,
+    int bands_shift,
+    int applied_price,
+    int mode,
+    int shift)
+【引数】
+    ①symbol通貨ペア名（チャート上の通貨ペアの場合「_Symbol」を指定）
+    ②timeframeタイムフレーム（iMA()と同じ定数から選択、チャート上のタイムフレームの場合「PERIOD_CURRENT」あるいは「0」を指定）
+    ③periodボリンジャーバンドを算出するバーの数
+    ④deviation移動平均線から上下にずらす標準偏差の倍率
+    ⑤bands_shiftボリンジャーバンドを右方向にシフトするバーの数
+    ⑥applied_price適用する価格（iMA()と同じ定数から選択）
+    ⑦mode出力するボリンジャーバンドのライン（以下の定数から選択）
+      MODE_MAINベースライン（移動平均線）
+      MODE_UPPER上位ライン
+      MODE_LOWER下位ライン
+    ⑧shiftボリンジャーバンドを算出する位置（最新のバーから左方向へのシフト）
+【戻り値】shiftの位置での、modeで指定したボリンジャーバンドの値

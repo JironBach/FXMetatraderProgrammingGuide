@@ -1,0 +1,17 @@
+iMAOnArray()移動平均を配列に適用する関数
+【書式】
+  double iMAOnArray(
+    double array[],
+    int total,
+    int ma_period,
+    int ma_shift,
+    int ma_method,
+    int shift)
+【引数】
+  ①array[]処理対象の配列名
+  ②total配列中で計算するバーの数（配列全体を計算する場合「0」を指定）
+  ③ma_period移動平均を算出するバーの数
+  ④ma_shift移動平均を右方向にシフトするバーの数
+  ⑤ma_method移動平均の方法（iMA()と同じ定数から選択）
+  ⑥shift移動平均を算出する位置（最新のバーから左方向へのシフト）
+【戻り値】配列array[]のshiftの位置での移動平均の値

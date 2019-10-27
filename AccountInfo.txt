@@ -1,0 +1,7 @@
+証拠金通貨：AccountInfoString(ACCOUNT_CURRENCY)
+レバレッジ：AccountInfoInteger(ACCOUNT_LEVERAGE)
+残高：AccountInfoDouble(ACCOUNT_BALANCE)
+有効証拠金：AccountInfoDouble(ACCOUNT_EQUITY)
+必要証拠金：AccountInfoDouble(ACCOUNT_MARGIN)
+余剰証拠金：AccountInfoDouble(ACCOUNT_MARGIN_FREE)
+証拠金維持率：AccountInfoDouble(ACCOUNT_MARGIN_LEVEL)

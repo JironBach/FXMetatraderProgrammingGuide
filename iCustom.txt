@@ -1,0 +1,16 @@
+iCustom()
+カスタム指標をテクニカル指標関数として使う関数
+【書式】double iCustom(
+  string symbol,
+  int timeframe,
+  string name,
+  ...,
+  int mode,
+  int shift)
+【引数】
+  ①symbol通貨ペア名（チャート上の通貨ペアの場合「_Symbol」を指定）
+  ②timeframeタイムフレーム（iMA()と同じ定数から選択、チャート上のタイムフレームの場合「PERIOD_CURRENT」あるいは「0」を指定）
+  ③nameカスタム指標の名前（カスタム指標プログラムファイル名から拡張子「.mq4」を除いた部分）
+  ④...カスタム指標のパラメーター（省略可）
+  ⑤modeカスタム指標の指標バッファのインデックス⑥shiftカスタム指標を算出する位置（最新のバーから左方向へのシフト）
+【戻り値】shiftの位置におけるmodeで指定したカスタム指標の値

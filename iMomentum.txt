@@ -1,0 +1,15 @@
+iMomentum()モメンタムを算出するテクニカル指標関数
+【書式】
+  double iMomentum(
+    string symbol,
+    int timeframe,
+    int period,
+    int applied_price,
+    int shift)
+【引数】
+  ①symbol通貨ペア名（チャート上の通貨ペアの場合「_Symbol」を指定）
+  ②timeframeタイムフレーム（iMA()と同じ定数から選択、チャート上のタイムフレームの場合「PERIOD_CURRENT」あるいは「0」を指定）
+  ③periodモメンタムを算出する位置から比の対象となるバーまでの数
+  ④applied_price適用する価格（iMA()と同じ定数から選択）
+  ⑤shiftモメンタムを算出する位置（最新のバーから左方向へのシフト）
+【戻り値】shiftの位置でのモメンタムの値
